@@ -16,14 +16,14 @@
 version: '3'
 services:
   your-app:
-    image: china324/aayurveda-app-myapp-frontend
+    image: china324/ayur_react_v1.0
     ports:
       - "3000:3000"
     networks:
-      - china324/aayurveda-app-myapp-frontend
+      - ayurvedha-frontend
 
 networks:
-  china324/aayurveda-app-myapp-frontend:   # Define the custom network "dairy-mgmt-frontend"
+  ayurvedha-frontend:   # Define the custom network "dairy-mgmt-frontend"
     driver: bridge
 
 
